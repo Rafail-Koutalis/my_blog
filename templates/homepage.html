@@ -3,14 +3,25 @@
 <html lang="en">
 <head>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
+            
+            background-image: url('your-image.jpg');
+            background-size: 100% 100%; /* Scale the image to 100% width and height of the container */
+            background-position: center;
+            background-repeat: no-repeat;
+
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100vh;
             background-image: url("{% static 'images/homepage_allapps/homepage.jpg' %}");
-            margin: 0;
+            background-size : auto;
             overflow: hidden;
         }
         a:hover{
